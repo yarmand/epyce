@@ -1,0 +1,193 @@
+body
+  font: normal 13px "Lucida Grande", "Tahoma", sans-serif
+  *font-size: 13px
+  -webkit-font-smoothing: antialiased
+
+body, select, input, textarea, button
+  color: #303030
+
+select, input, textarea, button
+  font: 99%
+b
+  font-weight: bold
+  
+ins, a, a:hover, a:active
+  text-decoration: none
+
+a, a:active
+  color: #636363
+  font-weight: inherit
+
+a:hover
+  color: #000
+
+a:link
+  -webkit-tap-highlight-color: #303030
+
+td, th
+  border: 1px solid #e5e5e5
+
+h1, h2, h3, h4, h5, h6
+  color: #181818
+  font-family: "Georgia", "Times New Roman", serif
+  font-weight: normal
+  line-height: 1.3em
+
+h1, h2, h3, h4, h5, h6, p
+  text-rendering: optimizeLegibility
+
+p
+  line-height: 1.618em
+
+h1
+  font-size: 2.6em
+  margin: 14px 0
+
+h2
+  font-size: 2.2em
+  margin: 10px 0
+
+h3
+  font-size: 1.8em
+  margin: 6px 0
+
+h4
+  font-size: 1.4em
+  margin: 4px 0
+
+h5
+  font-size: 1.1em
+
+ul, ol
+  margin: 20px
+
+ol
+  list-style: decimal
+
+li
+  margin-bottom: 6px
+  list-style: square outside
+
+blockquote
+  color: #636363
+  font-size: 1.2em
+  line-height: 1.3em
+  font-style: italic
+  margin: 14px 0
+  padding: 9px 20px 0 19px
+  border-left: 1px solid #ddd
+  p
+    font-size: inherit
+    line-height: inherit
+    color: inherit
+    font-style: inherit
+  cite
+    display: block
+    font-size: 0.9em
+    color: #555
+    &:before
+      content: "\2014 \0020"
+    a
+      color: #555
+      &:visited
+        color: #555
+
+input
+  &[type='text'], &[type='checkbox'], &[type='radio'], &.type_text, &.type_checkbox, &.type_radio
+    background: none
+
+input
+  &[type='checkbox'], &[type='radio'], &.type_checkbox, &.type_radio
+    border: 0
+
+
+img.scale
+  max-width: 100%
+  height: auto
+
+hr
+  height: 1px
+  padding: 0
+  margin: 10px 0
+  color: #c4c4c4
+  background-color: #c4c4c4
+  border: 0
+
+input[type='text'], input[type='password'], .type_text, .type_password
+  color: #444
+  border: 1px solid #ccc
+  padding: 2px
+  background: #fff
+  +border-radius(2px)
+  &:focus
+    color: inherit
+    border: 1px solid #aaa
+    +box-shadow(#eee 1px 1px 0)
+
+a.button, button, input[type='submit'], input[type='reset'], input[type='button'], .type_submit, .type_reset, .type_button
+  color: #444
+  border: 1px solid #aaa
+  border-top: 1px solid #ccc
+  border-left: 1px solid #ccc
+  padding: 2px 5px
+  display: inline-block
+  font-size: 0.85em
+  cursor: pointer
+  margin-bottom: 16px
+  line-height: 15px
+  background: #eee
+  +border-radius(3px)
+  +text-shadow(rgba(255, 255, 255, 0.75) 0 1px)
+  +gradient(#f7f7f7, #dddddd)
+
+  &:hover
+    color: #fcfcfc
+    background: #5499d8
+    padding: 2px 5px
+    border: 1px solid #888
+    border-top: 1px solid #aaa
+    border-left: 1px solid #aaa
+    +text-shadow(none)
+    +gradient(#5499d8, #2d7dc5)
+
+  &:active
+    color: #fff
+    background: #2d7dc5
+    padding: 2px 5px
+    border: 1px solid #888
+    border-bottom: 1px solid #aaa
+    border-right: 1px solid #aaa
+    +text-shadow(none)
+    +gradient(#2d7dc5, #5499d8)
+    +pressedEffect
+
+textarea, textarea:hover, textarea:focus, textarea:active
+  background: #fff
+  border: 1px solid #e5e5e5
+
+textarea, select
+  color: inherit
+  border: 1px solid #ccc
+  width: 210px
+  max-width: 100%
+  display: block
+  margin-bottom: 20px
+  background: #fff
+  +border-radius(2px)
+  &:focus
+    border: 1px solid #aaa
+    +box-shadow(#eee 2px 2px 0)
+
+textarea
+  padding: 6px 4px
+
+\::-moz-selection
+  background: #2d7dc5
+  color: #fff
+  +text-shadow(none)
+
+\::selection
+  background: #00bbff
+  color: #fff
+  +text-shadow(none)
+
