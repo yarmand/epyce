@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "epyce/version"
 
 Gem::Specification.new do |s|
-  s.version = Epyce::Rails::VERSION
+  s.version = Epyce::VERSION
   s.date = "2011-07-22"
   s.platform    = Gem::Platform::RUBY
   
