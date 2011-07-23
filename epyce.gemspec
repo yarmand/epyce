@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "epyce/rails/version"
+require "epyce/version"
 
 Gem::Specification.new do |s|
   s.version = Epyce::Rails::VERSION
