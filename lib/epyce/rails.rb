@@ -1,0 +1,1 @@
+require "epyce/rails/version"

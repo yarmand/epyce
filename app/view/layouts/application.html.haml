@@ -34,8 +34,11 @@
     = javascript_include_tag 'application'
 
     - # use asset manager to include html-epyce. see vendor/assets
-    = stylesheet_link_tag 'html-epyce', :media => 'all'
-    = javascript_include_tag 'html-epyce'
+    = stylesheet_link_tag 'epyce', :media => 'all'
+    - if Rails.env.development?
+      = javascript_include_tag 'epyce-debug'
+    - else
+      = javascript_include_tag 'epyce'
 
     = csrf_meta_tag
   
