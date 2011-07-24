@@ -3,7 +3,7 @@ module Epyce
     class InstallGenerator < ::Rails::Generators::Base
 
       desc "This generator install default haml application layout and several files in public"
-      source_root File.expand_path('../templates', __FILE__)
+      source_root File.expand_path('../../template', __FILE__)
 
       def copy_layout
         say_status("Copying", "application layout files", :green)

@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
 
   s.add_dependency "railties",      "~> 3.1.0.rc1"
+  s.add_dependency "haml"
   s.files = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
 

@@ -1,11 +1,59 @@
-HTML5 Epyce
-===========
+Epyce
+=====
 
-HTML Epyce is a A rails layout including skeleton, HTML5S and knockout
-
-It define a new layout and change asset manager defaults to get advantage of :
+HTML Epyce is a A rails layout including skeleton, HTML5S and knockout.js
 
 * skeleton (http://www.getskeleton.com/)
-* Damian Le Nouaille HTML5S (https://github.com/damln/Html5S) which take parts of html5 boilerplate (http://html5boilerplate.com)
-* knockout (http://knockoutjs.com)}
+  support png background for old IE
+* part of Damian Le Nouaille HTML5S project (https://github.com/damln/Html5S) which take parts of html5 boilerplate (http://html5boilerplate.com)
+* part of HTML5 boilerplate (http://html5boilerplate.com/)
+* depends on html gem
+
+Provide a  `application.html.haml` layout and some usefull files in the public directory such as default icons.
+
+Epyce include libs in debug mode when running in development environment and with minimal version of libs otherwise.
+
+Provided libs are :
+* knockout.js (http://knockoutjs.com)}
+  Model-View-ViewModel pattern implementation
+* head.js (http://headjs.com/)
+  html reset and javascript load/run management
+* Underscore.js (http://documentcloud.github.com/underscore)
+  provides a lot of the functional programming
+
+Rails Installation
+==================
+
+First, make sure the following gems are in your Gemfile
+
+    gem "epyce"
+
+Then run the following
+
+    bundle install
+    rails generate epyce:install
+
+**Here's a list of the files generator install in your Rails project:**
+
+    app/views/layouts/application.html.haml
+    app/views/layouts/_header.html.haml
+    app/views/layouts/_footer.html.haml
+    app/views/layouts/_flashes.html.haml
+
+    public/apple-touch-icon-114x114-precomposed.png
+    public/apple-touch-icon-57x57-precomposed.png
+    public/apple-touch-icon-72x72-precomposed.png
+    public/apple-touch-icon-precomposed.png
+    public/apple-touch-icon.png
+    public/crossdomain.xml
+    public/favicon.png
+
+Documentation
+=============
+
+(sorry nothing here yet)
+
+License
+=======
+[http://creativecommons.org/licenses/by/3.0](http://creativecommons.org/licenses/by/3.0)
 
