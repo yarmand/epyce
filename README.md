@@ -8,13 +8,13 @@ HTML Epyce is a A rails layout including skeleton, HTML5S and knockout.js
 * part of Damian Le Nouaille HTML5S project (https://github.com/damln/Html5S) which take parts of html5 boilerplate (http://html5boilerplate.com)
 * depends on html gem
 
-Provide a  `application.html.haml` layout and some usefull files in the public directory such as default icons.
+Provide a `application.html.haml` layout and some useful files in the public directory such as default icons.
 
 Epyce include libs in debug mode when running in development environment and with minimal version of libs otherwise.
 
 Provided libs are :
 
-* knockout.js (http://knockoutjs.com)}
+* knockout.js (http://knockoutjs.com)
   Model-View-ViewModel pattern implementation
 * head.js (http://headjs.com/)
   html reset and javascript load/run management
