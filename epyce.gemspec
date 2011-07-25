@@ -4,7 +4,7 @@ require "epyce/version"
 
 Gem::Specification.new do |s|
   s.version = Epyce::VERSION
-  s.date = "2011-07-22"
+  s.date = Epyce::VERSION_DATE
   s.platform    = Gem::Platform::RUBY
   
   s.name = "epyce"
