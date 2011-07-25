@@ -1,12 +1,12 @@
 Epyce
 =====
 
-HTML Epyce is a A rails layout including skeleton, HTML5S and knockout.js
+HTML Epyce is a a rails layout including skeleton, HTML5S and knockout.js
 
 * skeleton (http://www.getskeleton.com/)
   support png background for old IE
-* part of Damian Le Nouaille HTML5S project (https://github.com/damln/Html5S) which take parts of html5 boilerplate (http://html5boilerplate.com)
-* depends on html gem
+* part of Damian Le Nouaille HTML5S project (https://github.com/damln/Html5S) which itself take parts of html5 boilerplate (http://html5boilerplate.com)
+* depends on haml gem (http://haml-lang.com/)
 
 Provide a `application.html.haml` layout and some useful files in the public directory such as default icons.
 
@@ -26,7 +26,8 @@ Rails Installation
 
 First, make sure the following gems are in your Gemfile
 
-    gem "epyce"
+    gem "epyce", "~> 0.6.0"
+    gem "haml"
 
 Then run the following
 
@@ -47,11 +48,6 @@ Then run the following
     public/apple-touch-icon.png
     public/crossdomain.xml
     public/favicon.png
-
-Documentation
-=============
-
-(sorry nothing here yet)
 
 License
 =======
