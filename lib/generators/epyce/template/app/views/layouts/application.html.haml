@@ -35,10 +35,11 @@
     = javascript_include_tag 'application'
 
     - # use asset manager to include epyce. see vendor/assets
-    = stylesheet_link_tag 'epyce', :media => 'all'
+    = stylesheet_link_tag 'epyce/epyce', :media => 'all'
     <!--[if IE]>
     = stylesheet_link_tag 'epyce/ie', :media => 'all'
     <![endif]-->
+    = stylesheet_link_tag 'skeleton', :media => 'all'
 
     - if Rails.env.development?
       = javascript_include_tag 'epyce-debug'

@@ -1,1 +1,1 @@
-.ie6 .container{width:expression(document.body.clientWidth < 600 ? "600px" : document.body.clientWidth > 1000 ? "1000px" : "auto")}hr{margin-top:-0.5em}
+hr{margin-top:-0.5em}.ie6 .container{width:expression(document.body.clientWidth < 600 ? "600px" : document.body.clientWidth > 1000 ? "1000px" : "auto")}
