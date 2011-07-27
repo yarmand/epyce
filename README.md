@@ -38,6 +38,7 @@ Then run the following
 
     app/views/layouts/application.html.haml
     app/views/layouts/_header.html.haml
+    app/views/layouts/_header.html.haml
     app/views/layouts/_footer.html.haml
     app/views/layouts/_flashes.html.haml
 
@@ -46,8 +47,44 @@ Then run the following
     public/apple-touch-icon-72x72-precomposed.png
     public/apple-touch-icon-precomposed.png
     public/apple-touch-icon.png
-    public/crossdomain.xml
     public/favicon.png
+
+    public/crossdomain.xml
+
+    app/assets/javascripts/epyce-libs-debug.js.coffee
+    app/assets/javascripts/epyce-libs.js.coffee
+    app/assets/javascripts/epyce.js.coffee
+
+    app/assets/stylesheets/epyce.css.sass
+
+Documentation
+=============
+Epyce change the default asset pipeline behavior included in application.html.erb. and do not include application.js or application.css.
+
+The layout `application.html.haml` include thiner grained assets as :
+
+* all files in folders
+    app/assets/javascripts/application
+    app/assets/stylesheets/application
+* css and javascript common for all views in a controller
+    app/assets/javascripts/<controller_name>.js[.coffee]
+    app/assets/stylesheets/<controller_name>.js[.sass|.scss]
+* css and javascript for the actual view
+    app/assets/javascripts/<controller_name>/<action_name>.js[.coffee]
+    app/assets/stylesheets/<controller_name>/<action_name>.js[.sass|.scss]
+
+You can **customize** what javascript libs are loaded by editing
+    app/assets/javascripts/epyce-libs-debug.js.coffee
+    app/assets/javascripts/epyce-libs.js.coffee
+
+You can **customize** what css  are loaded by editing
+    app/assets/javascripts/epyce.css.sass
+
+
+TODO
+====
+* Still need to place the icons in the right location
+* Helpers for knockout.js
 
 License
 =======
