@@ -64,18 +64,18 @@ Epyce change the default asset pipeline behavior included in `application.html.e
 The layout `application.html.haml` include thiner grained assets (see `epyce.js.coffee` and `epyce.css.sass`) :
 
 * all files in folders
-    * app/assets/javascripts/application
-    * app/assets/stylesheets/application
+    * `app/assets/javascripts/application`
+    * `app/assets/stylesheets/application`
 
 * css and javascript common for all views in a controller
 
-    app/assets/javascripts/__controller_name__.js[.coffee]
-    app/assets/stylesheets/__controller_name__.js[.sass|.scss]
+    * `app/assets/javascripts/__controller_name__.js[.coffee]`
+    * `app/assets/stylesheets/__controller_name__.js[.sass|.scss]`
 
 * css and javascript for the actual view
 
-    app/assets/javascripts/<controller_name>/<action_name>.js[.coffee]
-    app/assets/stylesheets/<controller_name>/<action_name>.js[.sass|.scss]
+    * `app/assets/javascripts/__controller_name__/__action_name__.js[.coffee]`
+    * `app/assets/stylesheets/__controller_name__/__action_name__.js[.sass|.scss]`
 
 You can **customize** what javascript libs are loaded by editing
 
