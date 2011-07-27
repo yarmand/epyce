@@ -12,10 +12,17 @@ module Epyce
         end
       end
 
+      def copy_assets
+        say_status("Copying", "assets files", :green)
+        ["apple-touch-icon-114x114-precomposed.png", "apple-touch-icon-57x57-precomposed.png", "apple-touch-icon-72x72-precomposed.png", "apple-touch-icon-precomposed.png", "apple-touch-icon.png", "favicon.png" ].each do |f|
+          copy_file "app/assets/#{f}", "app/assets/#{f}"
+        end
+      end
+
       def copy_public
-        say_status("Copying", "application layout files", :green)
-        ["apple-touch-icon-114x114-precomposed.png", "apple-touch-icon-57x57-precomposed.png", "apple-touch-icon-72x72-precomposed.png", "apple-touch-icon-precomposed.png", "apple-touch-icon.png", "crossdomain.xml", "favicon.png" ].each do |f|
-          copy_file "public/#{f}", "public/#{f}"
+        say_status("Copying", "public files", :green)
+        ["crossdomain.xml" ].each do |f|
+          copy_file "public#{f}", "public/#{f}"
         end
       end
 
