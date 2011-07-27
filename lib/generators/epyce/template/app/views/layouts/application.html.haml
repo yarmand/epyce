@@ -29,21 +29,25 @@
     -# Mobile viewport optimized: j.mp/bplateviewport
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
 
+    - if Rails.env.development?
+      = javascript_include_tag 'epyce-libs-debug'
+    - else
+      = javascript_include_tag 'epyce-libs'
 
-    - # standard asset manager inclusion
-    = stylesheet_link_tag 'application', :media => 'all'
-    = javascript_include_tag 'application'
-
-    - # use asset manager to include epyce. see vendor/assets
+    - # asset pipeline will include only jquery and files from folder /assets/javascripts/application
     = stylesheet_link_tag 'epyce', :media => 'all'
     <!--[if IE]>
     = stylesheet_link_tag 'epyce/ie', :media => 'all'
     <![endif]-->
+    = javascript_include_tag 'epyce'
 
-    - if Rails.env.development?
-      = javascript_include_tag 'epyce-debug'
-    - else
-      = javascript_include_tag 'epyce'
+    - # include this controller assets
+    = stylesheet_link_tag "#{controller.controller_name}", :media => 'all'
+    = javascript_include_tag "#{controller.controller_name}"
+
+    - # include only this particular view assets
+    = stylesheet_link_tag "#{controller.controller_name}/#{controller.action_name}", :media => 'all'
+    = javascript_include_tag "#{controller.controller_name}/#{controller.action_name}"
 
     = csrf_meta_tag
   

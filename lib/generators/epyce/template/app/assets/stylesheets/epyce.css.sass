@@ -1,0 +1,11 @@
+# replace default asset pipeline behavior that include everything in asset/stylesheets
+# it only embed all files in assets/javascripts/application
+
+###  from HTML5S
+#= require epyce/reset.css
+#= require epyce/screen.css
+#= require epyce/mobile.css
+### Skeleton
+#= require_tree ./skeleton
+
+#= require_tree ./application

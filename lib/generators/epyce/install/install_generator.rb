@@ -26,6 +26,21 @@ module Epyce
         end
       end
 
+      def copy_javascripts
+        say_status("Copying", "javascripts loaders", :green)
+        ["epyce-libs-debug.js.coffee", "epyce-libs.js.coffee", "epyce.js.coffee" ].each do |f|
+          copy_file "app/assets/javascripts/#{f}", "app/assets/javascripts/#{f}"
+        end
+      end
+
+      def copy_css
+        say_status("Copying", "stylesheets loaders", :green)
+        ["epyce.css.sass" ].each do |f|
+          copy_file "app/assets/stylesheets/#{f}", "app/assets/stylesheets/#{f}"
+        end
+      end
+
+
     end
   end
 end
