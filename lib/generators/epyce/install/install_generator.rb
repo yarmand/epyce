@@ -22,7 +22,7 @@ module Epyce
       def copy_public
         say_status("Copying", "public files", :green)
         ["crossdomain.xml" ].each do |f|
-          copy_file "public#{f}", "public/#{f}"
+          copy_file "public/#{f}", "public/#{f}"
         end
       end
 
