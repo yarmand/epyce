@@ -64,9 +64,8 @@ Epyce change the default asset pipeline behavior included in `application.html.e
 The layout `application.html.haml` include thiner grained assets (see `epyce.js.coffee` and `epyce.css.sass`) :
 
 * all files in folders
-
-    app/assets/javascripts/application
-    app/assets/stylesheets/application
+    * app/assets/javascripts/application
+    * app/assets/stylesheets/application
 
 * css and javascript common for all views in a controller
 
