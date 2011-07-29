@@ -21,6 +21,9 @@ Provided libs are :
 * Underscore.js (http://documentcloud.github.com/underscore)
   provides a lot of the functional programming
 
+
+For update Infos,  follow [http://twitter.com/epyce](@epyce) on twitter
+
 Rails Installation
 ==================
 
