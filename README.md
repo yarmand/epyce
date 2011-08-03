@@ -60,8 +60,8 @@ Then run the following
 
     app/assets/stylesheets/epyce.css.sass
 
-Documentation
-=============
+Changes in assets pipeline default behavior
+===========================================
 Epyce change the default asset pipeline behavior included in `application.html.erb` and do not include `application.js` or `application.css`.
 
 The layout `application.html.haml` include thiner grained assets (see `epyce.js.coffee` and `epyce.css.sass`) :
@@ -88,6 +88,25 @@ You can **customize** what javascript libs are loaded by editing
 You can **customize** what css  are loaded by editing
 
     app/assets/javascripts/epyce.css.sass
+
+Make Skeleton dynamic and responsive
+====================================
+You can use **Skeleton** with dynamic behavior on big screen by changing values in `app/assets/stylesheets/epyce.css.sass`
+
+	$skeleton_global_width: 960px
+	$skeleton_column_margin_left: 10px
+	$skeleton_column_margin_right: 10px
+	$skeleton_row_margin_bottom: 20px
+
+Due to bug [https://github.com/nex3/sass/issues/46](#46) in sass I have fixed skeleton to 960px when screen width goes below 1200px.
+This mean for example you set `$skeleton_global_width: 1350px`, skeleton will use autoresponsive width like this :
+
+    | screen width  | skeleton effective width |
+    |    1400       |           1350           |
+    |    1300       |           1350           |
+    |    1200       |           1350           |
+    |    1199       |            960           |
+    |     950       |            768           |
 
 
 Todo
