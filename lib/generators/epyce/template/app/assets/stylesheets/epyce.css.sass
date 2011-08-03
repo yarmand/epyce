@@ -7,7 +7,13 @@
 //= require epyce/mobile.css
 //## Skeleton
 //=  require skeleton/base.css
-//=  require skeleton/skeleton.css
-//=  require skeleton/layout.css
+//= require_self
+//  require skeleton/layout.css
 //## 
 //= require_tree ./application
+
+$skeleton_global_width: 960px
+$skeleton_column_margin_left: 10px
+$skeleton_column_margin_right: 10px
+$skeleton_row_margin_bottom: 20px
+@import skeleton/skeleton.sass
