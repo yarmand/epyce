@@ -1,7 +1,7 @@
 Epyce
 =====
 
-HTML Epyce is a a rails layout including skeleton, HTML5S and knockout.js
+HTML Epyce is a a rails layout including configurable Skeleton, HTML5S and knockout.js
 
 * skeleton (http://www.getskeleton.com/)
   support png background for old IE
@@ -29,8 +29,7 @@ Rails Installation
 
 First, make sure the following gems are in your Gemfile
 
-    gem "epyce", "~> 0.6.0"
-    gem "haml"
+    gem "epyce", "~> 0.8.3"
 
 Then run the following
 
@@ -89,7 +88,7 @@ You can **customize** what css  are loaded by editing
 
     app/assets/javascripts/epyce.css.sass
 
-Make Skeleton dynamic and responsive
+Configure Skeleton big screens width
 ====================================
 You can use **Skeleton** with dynamic behavior on big screen by changing values in `app/assets/stylesheets/epyce.css.sass`
 
