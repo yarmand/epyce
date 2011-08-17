@@ -1,7 +1,8 @@
 Epyce
 =====
 
-**WARNING: ** HTML5S project is dead and will be replaced by [https://github.com/damln/Epycea](epycea), adding dynamic behaviors and valuable sass mixins. Future release of **epyce** (0.9.0) will include these changes and will deprecate code in epyce.css (reset.css, screen.css and obile.css)
+**WARNING:**
+HTML5S project is dead and will be replaced by [https://github.com/damln/Epycea](epycea), adding dynamic behaviors and valuable sass mixins. Future release of **epyce** (0.9.0) will include these changes and will deprecate code in epyce.css (reset.css, screen.css and obile.css)
 
 HTML Epyce is a a rails layout including configurable Skeleton, HTML5S and knockout.js
 
