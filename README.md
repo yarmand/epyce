@@ -1,6 +1,8 @@
 Epyce
 =====
 
+**WARNING: ** HTML5S project is dead and will be replaced by [https://github.com/damln/Epycea](epycea), adding dynamic behaviors and valuable sass mixins. Future release of **epyce** (0.9.0) will include these changes and will deprecate code in epyce.css (reset.css, screen.css and obile.css)
+
 HTML Epyce is a a rails layout including configurable Skeleton, HTML5S and knockout.js
 
 * skeleton (http://www.getskeleton.com/)
@@ -110,8 +112,12 @@ This mean for example you set `$skeleton_global_width: 1350px`, skeleton will us
 
 Todo
 ====
+* replace HTML5S with [https://github.com/damln/Epycea](epycea)
+* write namespace based pre-compile for production ENV. This way all Assets should be precompiled again in prod with code conflict
 * Still need to place the icons in the right location
+* create a epyce-knockout gem and depend on it
 * Helpers for knockout.js
+* create a epyce-backbone gem to integrate backbone.js
 
 License
 =======
