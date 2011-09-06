@@ -2,6 +2,7 @@ Epyce
 =====
 
 **Project Discontinued**
+
 I stop this project because I changed my way of working with RAils assets pipeline.
 A new project will comes later.
 In the meantime you ca have a look of this post : [Javascript initializers to your views with Rails 3.1 and CoffeeScript](http://blog.harakys.fr/javascript-initializers-to-your-views-with-rails-3-1-and-coffeescript-2/)
